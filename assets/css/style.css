@@ -1,12 +1,5 @@
 @import url(./root.css);
 
-/* <---------------------------------------------------------------Normal Css -------------------------------------------------------------------->*/
-
-.title_box {
-    width: 91px;
-    height: 53.77px;
-}
-
 /* <--------------------------------------------------------------- Spacing -------------------------------------------------------------------->*/
 
 .gap_32px {
@@ -25,6 +18,11 @@
 .py_122px {
     padding-top: 122px;
     padding-bottom: 122px;
+}
+
+.py_82px {
+    padding-top: 82px;
+    padding-bottom: 82px;
 }
 
 .mt_52px {
@@ -146,6 +144,10 @@
     pointer-events: none;
 }
 
+.rounded_61px {
+    border-radius: 61px;
+}
+
 /* <--------------------------------------------------------------- Positions -------------------------------------------------------------------->*/
 
 .nav_link {
@@ -154,6 +156,21 @@
 
 .vision_box {
     position: relative;
+}
+
+.msn_sec_ellipse {
+    top: -220px;
+    right: 0;
+}
+
+.our_vsn_ellipse_1 {
+    right: 0;
+    bottom: 0;
+}
+
+.our_vsn_ellipse_2 {
+    left: 0;
+    bottom: 0;
 }
 
 .center_pos {
@@ -211,6 +228,18 @@
     transition: all 300ms linear;
 }
 
+.start_btn {
+    border-radius: 61px;
+    border: 1px solid transparent;
+    background: var(--color-white);
+}
+
+.start {
+    background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* <--------------------------------------------------------------- Hover Efects -------------------------------------------------------------------->*/
 
 .nav_link:hover::after {
@@ -258,6 +287,16 @@
 .hero_heading {
     max-width: 948px;
     min-height: 140px;
+}
+
+.sub_max_W {
+    max-width: 792px;
+    min-height: 215px;
+}
+
+.title_box {
+    width: 91px;
+    height: 53.77px;
 }
 
 .first_sec {

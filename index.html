@@ -139,7 +139,10 @@
 
         <!-- Our Mission -->
 
-        <section class="py_our_msn">
+        <section class="py_our_msn position-relative">
+            <span class="msn_sec_ellipse position-absolute">
+                <img src="./assets/images/png/msn_sec_ellipse.png" alt="random ellipse" class="w-100">
+            </span>
             <div class="container_hero">
                 <div class="row">
                     <div class="col-md-6 position-relative">
@@ -187,7 +190,13 @@
 
         <!-- Our Vision -->
 
-        <section>
+        <section class="position-relative">
+            <span class="position-absolute our_vsn_ellipse_1">
+                <img src="./assets/images/png/our_vsn_right_0.png" alt="random ellipse">
+            </span>
+            <span class="position-absolute our_vsn_ellipse_2">
+                <img src="./assets/images/png/our_vsn_left_0.png" alt="random ellipse">
+            </span>
             <div class="container_hero">
                 <div class="row flex-md-row flex-column-reverse">
                     <div
@@ -784,13 +793,22 @@
         <!-- what are you waiting for -->
 
         <section>
-            <div class="container_hero wait_back_hero my_152px">
-                <p class="fm-sans fw-700 fs-48 lh-54 text-white text-center">So, what you’ve been waiting for?</p>
-                <p class="fm-sans fw-400 fs-16 lh-24 text-white text-center">Ipsum integer faucibus eu morbi integer.
-                    Tempus in
-                    volutpat libero mauris neque dolor pellentesque
-                    sagittis. Scelerisque
-                    tempor auctor euismod rhoncus non elit molestie sed. Orci quam at varius eget.</p>
+            <div class="container_hero wait_back_hero my_152px d-flex align-items-center justify-content-center">
+                <div class="sub_max_W d-flex align-items-center justify-content-center flex-column py_82px">
+                    <p class="fm-sans fw-700 fs-48 lh-54 text-white text-center m-0">So, what you’ve been waiting for?
+                    </p>
+                    <p class="fm-sans fw-400 fs-16 lh-24 text-white text-center mt-3 mb_42px">Ipsum integer faucibus eu
+                        morbi
+                        integer.
+                        Tempus in
+                        volutpat libero mauris neque dolor pellentesque
+                        sagittis. Scelerisque
+                        tempor auctor euismod rhoncus non elit molestie sed. Orci quam at varius eget.</p>
+                    <div class="start_btn d-inline-block">
+                        <button class="py-3 px_42px fm-sans fw-700 fs-16 lh-24 border-0 rounded_61px start">Get
+                            Started</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
