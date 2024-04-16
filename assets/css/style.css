@@ -13,8 +13,65 @@
     gap: 32px;
 }
 
+.my_52px {
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.mt_20px {
+    margin-top: 20px;
+}
+
+.py_122px {
+    padding-top: 122px;
+    padding-bottom: 122px;
+}
+
+.mt_52px {
+    margin-top: 52px;
+}
+
+.mb_42px {
+    margin-bottom: 42px;
+}
+
+.py_company {
+    padding-top: 109px;
+    padding-bottom: 122px;
+}
+
+.my_152px {
+    margin-top: 152px;
+    margin-bottom: 152px;
+}
+
+.mb_152px {
+    margin-bottom: 152px;
+}
+
+.mt_12px {
+    margin-top: 12px;
+}
+
+.my_12px {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.p_12px {
+    padding: 12px;
+}
+
 .pe_32px {
     padding-right: 32px;
+}
+
+.mb_9px {
+    margin-bottom: 9px;
+}
+
+.mt_9px {
+    margin-top: 9px;
 }
 
 .px_42px {
@@ -53,6 +110,11 @@
     gap: 12px;
 }
 
+.py_our_msn {
+    padding-top: 124px;
+    padding-bottom: 152px;
+}
+
 /* <--------------------------------------------------------------- borders -------------------------------------------------------------------->*/
 
 /* .border_left {
@@ -69,10 +131,35 @@
     right: 0;
 }
 
+.vision_box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: var(--nav_link);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
 /* <--------------------------------------------------------------- Positions -------------------------------------------------------------------->*/
 
 .nav_link {
     position: relative;
+}
+
+.vision_box {
+    position: relative;
+}
+
+.center_pos {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .ellipse_hero_pos {
@@ -90,6 +177,16 @@
     right: -40px;
 }
 
+.ellipse_service_pos {
+    bottom: 0;
+    left: 0;
+}
+
+.ellipse_service_pos_2 {
+    top: 0;
+    right: 0;
+}
+
 /* <--------------------------------------------------------------- Before & After -------------------------------------------------------------------->*/
 
 .nav_link::after {
@@ -105,6 +202,14 @@
     transition: all 300ms linear;
 }
 
+/* <--------------------------------------------------------------- btn changes -------------------------------------------------------------------->*/
+
+.contact_btn {
+    border-radius: 61px;
+    background: var(--nav_link);
+    border: 1px solid transparent;
+    transition: all 300ms linear;
+}
 
 /* <--------------------------------------------------------------- Hover Efects -------------------------------------------------------------------->*/
 
@@ -120,8 +225,25 @@
     background: var(--nav_link);
 }
 
+.choose_box:hover {
+    box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.12);
+}
+
+.service_box:hover .service_svg_icon path {
+    fill: var(--color-white) !important;
+}
+
+.service_box:hover .svg_service_box {
+    background: var(--nav_link);
+}
+
 .nav_link:hover {
     color: var(--black-color);
+}
+
+.service_box:hover {
+    box-shadow: 0px 9px 50px 0px rgba(0, 0, 0, 0.12);
+    border: 1px solid transparent;
 }
 
 .contact_btn:hover {
@@ -131,22 +253,61 @@
     color: var(--black-color) !important;
 }
 
-/* <--------------------------------------------------------------- btn changes -------------------------------------------------------------------->*/
-
-.contact_btn {
-    border-radius: 61px;
-    background: var(--nav_link);
-    border: 1px solid transparent;
-    transition: all 300ms linear;
-}
-
-
-
 /* <--------------------------------------------------------------- wdith height changes-------------------------------------------------------------------->*/
 
 .hero_heading {
     max-width: 948px;
     min-height: 140px;
+}
+
+.first_sec {
+    max-width: 397.88px;
+    min-height: 54.26px;
+}
+
+.choose_box {
+    max-width: 558px;
+    min-height: 112px;
+    padding: 12px;
+    border-radius: 16px;
+    border: 0.5px;
+    border: 0.5px solid rgba(0, 0, 0, 0.24)
+}
+
+.svg_service_box {
+    width: 72px;
+    height: 72px;
+    padding: 14.82px;
+    border-radius: 50%;
+    background: var(--service-svg-color);
+    transition: all 300ms linear;
+}
+
+.service_box {
+    max-width: 364px;
+    min-height: 270px;
+    padding: 20px 20px 44px 20px;
+    border-radius: 16px;
+    border: 0.5px;
+    background: #EFEFEF;
+    border: 0.5px solid rgba(0, 0, 0, 0.24);
+    transition: all 300ms linear;
+}
+
+.max_w_md {
+    max-width: 536px;
+}
+
+.svg_box {
+    width: 32px !important;
+    height: 32px !important;
+    padding: 8px;
+    background: var(--our-vision);
+    border-radius: 50%;
+}
+
+.w_88px {
+    width: 88px;
 }
 
 .max_w_lorem {
@@ -170,7 +331,12 @@
     min-height: 52px;
 }
 
-/* <--------------------------------------------------------------- backColors backImages and text liear gradient -------------------------------------------------------------------->*/
+.max_w_msn_sec {
+    max-width: 536px;
+    min-height: 168px;
+}
+
+/* <--------------------------------------------------------------- backColors backImages and text liear gradient text_color -------------------------------------------------------------------->*/
 
 .text_lg {
     background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
@@ -178,21 +344,39 @@
     -webkit-text-fill-color: transparent;
 }
 
+.service_back {
+    background-image: url(../images/png/service_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-
-/* <--------------------------------------------------------------- backColors backImages and text liear gradient -------------------------------------------------------------------->*/
+.company_back {
+    background-image: url(../images/png/companies_back_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .img_box {
     box-shadow: 0px 0px 100px 0px rgba(45, 202, 63, 0.1);
+}
+
+.nav_link_color {
+    background: var(--nav_link);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.change_fill path {
+    fill: url(#paint1_linear_40432_2511);
 }
 
 /* <--------------------------------------------------------------- animated menuicon -------------------------------------------------------------------->*/
 .z-60 {
     z-index: 60;
 }
-
-/* <--------------------------------------------------------------- animated menuicon -------------------------------------------------------------------->*/
-
 
 .ham {
     cursor: pointer;

@@ -35,6 +35,8 @@
     --inside_slick_div: #0000000A;
     --box_color: linear-gradient(121.85deg, rgba(119, 176, 0, 0.02) -1.54%, rgba(0, 216, 99, 0.02) 98.96%);
     --box-line-clr: linear-gradient(270deg, rgba(253, 252, 252, 0) 0%, #FDFCFC 51.55%, rgba(253, 252, 252, 0) 100%);
+    --our-vision: linear-gradient(130.88deg, rgba(168, 84, 233, 0.12) -9.14%, rgba(79, 145, 252, 0.12) 283.16%);
+    --service-svg-color: linear-gradient(130.88deg, rgba(168, 84, 233, 0.16) -9.14%, rgba(79, 145, 252, 0.16) 283.16%);
     --get_btn: #F36A3E;
     /* font-family */
     --fm-poppins: "Poppins", sans-serif;
@@ -579,6 +581,11 @@ a {
         font-size: var(--fs-59);
         line-height: var(--lh-68);
     }
+
+    .max_w_srvc_sec {
+        max-width: 536px;
+        min-height: 168px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -613,6 +620,21 @@ a {
         font-size: var(--fs-50);
         line-height: var(--lh-56);
     }
+
+    .py_our_msn {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+
+    .my_our_msn {
+        margin-top: 80px !important;
+        margin-bottom: 80px !important;
+    }
+
+    .max_w_srvc_sec {
+        max-width: 536px;
+        min-height: 0;
+    }
 }
 
 
@@ -636,6 +658,11 @@ a {
         line-height: var(--lh-49);
     }
 
+    .my_our_msn {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+
     .hero_heading {
         max-width: 948px;
         min-height: auto !important;
@@ -644,5 +671,14 @@ a {
     .fs_sub_text {
         font-size: var(--fs-14);
         line-height: var(--lh-23);
+    }
+
+    .py_our_msn {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .w-sm-100 {
+        max-width: 100% !important;
     }
 }
