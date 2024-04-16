@@ -4,15 +4,137 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Noble Mind</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <header class="min-vh-100 position-relative">
+        <nav>
+            <div class="container_hero py_17px">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="title_box">
+                        <img src="./assets/images/png/title_image.png" alt="title text" class="w-100 h-100">
+                    </div>
+                    <span class="position-relative z-60 menuicon d-md-none d-flex">
+                        <svg class="ham ham3" viewBox="0 0 100 100" width="80"
+                            onclick="this.classList.toggle('active')">
+                            <path class="line top"
+                                d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568" />
+                            <path class="line middle"
+                                d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7" />
+                            <path class="line bottom"
+                                d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
+                        </svg>
+                    </span>
+                    <div class="d-flex align-items-center gap_32px nav_items lg_view">
+                        <a href="#"
+                            class="fm-sans fw-400 fs-16 lh-24 text-decoration-none light_black_clr nav_link">Home</a>
+                        <a href="#"
+                            class="fm-sans fw-400 fs-16 lh-24 text-decoration-none light_black_clr nav_link">About
+                            Us</a>
+                        <a href="#"
+                            class="fm-sans fw-400 fs-16 lh-24 text-decoration-none light_black_clr nav_link">Solutions</a>
+                        <a href="#"
+                            class="fm-sans fw-400 fs-16 lh-24 text-decoration-none light_black_clr nav_link">Resources</a>
+                        <button
+                            class="py-3 px_42px contact_btn fm-sans fw-700 fs-16 lh-24 text-white d-md-none d-block">Contact
+                            Us</button>
+                    </div>
+                    <button
+                        class="py-3 px_42px contact_btn fm-sans fw-700 fs-16 lh-24 text-white d-md-block d-none">Contact
+                        Us</button>
+                </div>
+            </div>
+        </nav>
+        <section class="mt_44px">
+            <span class="position-absolute ellipse_hero_pos z-1">
+                <img src="./assets/images/png/hero_top_ellipse.png" alt="blue ellipse" class="w-100">
+            </span>
+            <div class="container_hero d-flex align-items-center justify-content-center flex-column">
+                <p class="fm-sans fw-700 fs-64 lh-71 text-center hero_heading m-0 fs_lh_heading">Elevate Your Solutions
+                    with
+                    <span class="text_lg">Noble
+                        Mind IT</span>
+                </p>
+                <p
+                    class="fm-sans fw-400 fs-16 lh-24 opacity-75 text-black text-center max_w_lorem mb_67px mt-3 fs_sub_text">
+                    At
+                    Noble Mind IT,
+                    we're
+                    dedicated to taking your IT
+                    solutions to new heights. In today's
+                    ever-evolving technological
+                    landscape, having a trusted partner to elevate your IT infrastructure is paramount.</p>
+                <div
+                    class="container_hero img_box position-relative d-flex align-items-center justify-content-center px-0 flex-column">
+                    <span class="position-absolute top_left_ring z-1">
+                        <img src="./assets/images/png/ring_img_top_left.png"
+                            alt="ring on the top left corner of the image to inc it's beauty">
+                    </span>
+                    <span class="position-absolute bottom_right_img z-1">
+                        <img src="./assets/images/png/ring_image_bottom_right.png"
+                            alt="ring on the top left corner of the image to inc it's beauty">
+                    </span>
+                    <img src="./assets/images/png/hero_sec_main_image.png"
+                        alt="one guy and two girls talking about the project"
+                        class="w-100 h-100 position-relative z-3 h_media object-fit-sm-fill object-fit-cover rounded-2">
+
+                    <div class="box z-6 mx_12px">
+                        <div class="row d-flex align-items-center justify-content-center">
+                            <div
+                                class="col-lg-4 col-sm-6 border_left position-relative d-flex align-items-center justify-content-center">
+                                <div class="d-flex align-items-center px_32px py_22px py_sm_10px gap_12px">
+                                    <span class="d-flex align-items-center justify-content-center">
+                                        <p class="fm-sans fw-700 fs-61 lh-68 text-white m-0 fs_lh_change">8</p>
+                                        <p class="m-0 fm-sans fw-700 fs-61 lh-68 text-white m-0 fs_lh_change">+</p>
+                                    </span>
+                                    <span class="brdr_left d-sm-block d-none"></span>
+                                    <p class="fm-sans fw-400 fs-18 lh-26 text-white m-0 max_w_box_text fs_sub_text">
+                                        Years of
+                                        Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 position-relative">
+                                <div
+                                    class="d-flex align-items-center px_32px py_22px py_sm_10px gap_12px d-flex align-items-center justify-content-center">
+                                    <span class="d-flex align-items-center justify-content-center">
+                                        <p class="fm-sans fw-700 fs-61 lh-68 text-white m-0 fs_lh_change">50</p>
+                                        <p class="m-0 fm-sans fw-700 fs-61 lh-68 text-white m-0 fs_lh_change">+</p>
+                                    </span>
+                                    <span class="brdr_left d-sm-block d-none"></span>
+                                    <p class="fm-sans fw-400 fs-18 lh-26 text-white m-0 max_w_box_text fs_sub_text">
+                                        Years of
+                                        Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <div
+                                    class="d-flex align-items-center px_32px py_22px py_sm_10px gap_12px d-flex align-items-center justify-content-center">
+                                    <span class="d-flex align-items-center justify-content-center">
+                                        <p class="fm-sans fw-700 fs-61 lh-68 text-white m-0 fs_lh_change">30</p>
+                                        <p class="m-0 fm-sans fw-700 fs-61 lh-68 text-white m-0 fs_lh_change">+</p>
+                                    </span>
+                                    <p class="fm-sans fw-400 fs-18 lh-26 text-white m-0 max_w_box_text fs_sub_text">
+                                        Years of
+                                        Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="py-3 px_42px contact_btn fm-sans fw-700 fs-16 lh-24 text-white mt_45px">Get
+                    Started</button>
+            </div>
+        </section>
+    </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

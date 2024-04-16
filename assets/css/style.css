@@ -1,0 +1,249 @@
+@import url(./root.css);
+
+/* <---------------------------------------------------------------Normal Css -------------------------------------------------------------------->*/
+
+.title_box {
+    width: 91px;
+    height: 53.77px;
+}
+
+/* <--------------------------------------------------------------- Spacing -------------------------------------------------------------------->*/
+
+.gap_32px {
+    gap: 32px;
+}
+
+.pe_32px {
+    padding-right: 32px;
+}
+
+.px_42px {
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.py_17px {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.mt_44px {
+    margin-top: 44px;
+}
+
+.mb_67px {
+    margin-bottom: 67px;
+}
+
+.mt_45px {
+    margin-top: 45px;
+}
+
+.px_32px {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.py_22px {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.gap_12px {
+    gap: 12px;
+}
+
+/* <--------------------------------------------------------------- borders -------------------------------------------------------------------->*/
+
+/* .border_left {
+    border-left: 1px solid;
+    border-image-source: linear-gradient(270deg, rgba(253, 252, 252, 0) 0%, #FDFCFC 51.55%, rgba(253, 252, 252, 0) 100%);
+    border-image-slice: 1;
+    border-image-width: 1px;
+} */
+.brdr_left {
+    position: absolute;
+    width: 2px;
+    height: 81px;
+    background: var(--box-line-clr);
+    right: 0;
+}
+
+/* <--------------------------------------------------------------- Positions -------------------------------------------------------------------->*/
+
+.nav_link {
+    position: relative;
+}
+
+.ellipse_hero_pos {
+    top: 0;
+    left: 0;
+}
+
+.top_left_ring {
+    top: -40px;
+    left: -40px;
+}
+
+.bottom_right_img {
+    bottom: -40px;
+    right: -40px;
+}
+
+/* <--------------------------------------------------------------- Before & After -------------------------------------------------------------------->*/
+
+.nav_link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    /* border-radius: ; */
+    background: var(--nav_link);
+    transition: all 300ms linear;
+}
+
+
+/* <--------------------------------------------------------------- Hover Efects -------------------------------------------------------------------->*/
+
+.nav_link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--nav_link);
+}
+
+.nav_link:hover {
+    color: var(--black-color);
+}
+
+.contact_btn:hover {
+    background: transparent;
+    border: 1px solid var(--white-color);
+    box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.15);
+    color: var(--black-color) !important;
+}
+
+/* <--------------------------------------------------------------- btn changes -------------------------------------------------------------------->*/
+
+.contact_btn {
+    border-radius: 61px;
+    background: var(--nav_link);
+    border: 1px solid transparent;
+    transition: all 300ms linear;
+}
+
+
+
+/* <--------------------------------------------------------------- wdith height changes-------------------------------------------------------------------->*/
+
+.hero_heading {
+    max-width: 948px;
+    min-height: 140px;
+}
+
+.max_w_lorem {
+    max-width: 829px;
+    min-height: 48px;
+}
+
+.box {
+    position: absolute;
+    max-width: 997px;
+    min-height: 110px;
+    /* padding: 12px 0px 0px 0px; */
+    border-radius: 12px;
+    background: var(--box_color);
+    backdrop-filter: blur(20px);
+    bottom: 52px;
+}
+
+.max_w_box_text {
+    max-width: 119.71px;
+    min-height: 52px;
+}
+
+/* <--------------------------------------------------------------- backColors backImages and text liear gradient -------------------------------------------------------------------->*/
+
+.text_lg {
+    background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+/* <--------------------------------------------------------------- backColors backImages and text liear gradient -------------------------------------------------------------------->*/
+
+.img_box {
+    box-shadow: 0px 0px 100px 0px rgba(45, 202, 63, 0.1);
+}
+
+/* <--------------------------------------------------------------- animated menuicon -------------------------------------------------------------------->*/
+.z-60 {
+    z-index: 60;
+}
+
+/* <--------------------------------------------------------------- animated menuicon -------------------------------------------------------------------->*/
+
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    z-index: 6;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham3 .top {
+    stroke-dasharray: 40 130;
+}
+
+.ham3 .middle {
+    stroke-dasharray: 40 140;
+}
+
+.ham3 .bottom {
+    stroke-dasharray: 40 205;
+}
+
+.ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+}
+
+.ham3.active .middle {
+    stroke-dashoffset: -102px;
+}
+
+.ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
+}
