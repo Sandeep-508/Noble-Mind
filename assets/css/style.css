@@ -344,6 +344,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+.wait_back_hero {
+    background-image: url(../images/png/wait_sec.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .service_back {
     background-image: url(../images/png/service_back.png);
     background-repeat: no-repeat;
