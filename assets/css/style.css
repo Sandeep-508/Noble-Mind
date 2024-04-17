@@ -645,7 +645,7 @@
 /* <----------------------------------------------------------- Progress ----------------------------------------------------------------> */
 
 
-.header {
+.headers {
     position: fixed;
     top: 0;
     z-index: 59;
@@ -667,8 +667,6 @@
 }
 
 
-
-
 /* <----------------------------------------------------------- Pre Loader ----------------------------------------------------------------> */
 
 .top_0 {
@@ -676,20 +674,22 @@
 }
 
 .preloader {
-    background-image: url(../images/png/hero_sec_preloader.png);
+    background-image: url(../images/png/herosec_back_img.png);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    
+    transition: all 300ms linear;
 }
 
 :root {
     --bg: #e3e4e8;
     --fg: #17181c;
     --dur: 8s;
-    font-size: calc(20px + (30 - 20) * (100vw - 320px) / (1280 - 320));
 }
 
+.-top-105 {
+    top: -105%;
+}
 
 .hexagon {
     margin-bottom: 1.5em;
@@ -800,14 +800,6 @@
 
 .hexagon__sector:after {
     transform: rotate(-150deg)
-}
-
-/* Dark theme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #17181c;
-        --fg: #e3e4e8;
-    }
 }
 
 /* Animations */

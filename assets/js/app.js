@@ -56,3 +56,10 @@ function myFunction() {
     var scrolled = (winScroll / height) * 100;
     document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+
+let preloader = document.querySelector(".preloader");
+
+setTimeout(() => {
+    preloader.classList.add("-top-105");
+}, 3000);
