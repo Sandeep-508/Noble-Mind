@@ -574,6 +574,22 @@ a {
         margin-right: 12px;
         margin-left: 12px;
     }
+
+    .pe_21px {
+        padding-right: 21px;
+    }
+
+    .ps_21px {
+        padding-left: 21px;
+    }
+
+    .pe_31px {
+        padding-right: 31px;
+    }
+
+    .ps_31px {
+        padding-left: 31px;
+    }
 }
 
 @media (max-width: 992px) {
