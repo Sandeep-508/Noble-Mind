@@ -600,7 +600,7 @@ a {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        z-index: 50;
+        z-index: 60;
     }
 
     .show {
@@ -635,11 +635,21 @@ a {
         max-width: 536px;
         min-height: 0;
     }
+
+    .fs_lh_hero_box {
+        font-size: var(--fs-50);
+        line-height: var(--lh-60);
+    }
 }
 
 
 @media (max-width: 575.9px) {
     .fs_lh_change {
+        font-size: var(--fs-30);
+        line-height: var(--lh-39);
+    }
+
+    .fs_lh_hero_box {
         font-size: var(--fs-30);
         line-height: var(--lh-39);
     }
@@ -680,5 +690,10 @@ a {
 
     .w-sm-100 {
         max-width: 100% !important;
+    }
+
+    .fs_lh_some_heading {
+        font-size: var(--fs-36);
+        line-height: var(--lh-46);
     }
 }
