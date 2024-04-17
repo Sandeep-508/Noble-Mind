@@ -173,6 +173,17 @@
     position: relative;
 }
 
+.why_choose_right_ellipse_pos {
+    top: -25%;
+    right: 0;
+}
+
+.center_ellipse_pos {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .vision_box {
     position: relative;
 }
@@ -180,6 +191,11 @@
 .msn_sec_ellipse {
     top: -220px;
     right: 0;
+}
+
+.hero_right_ellipse_pos {
+    right: 0;
+    top: -60px;
 }
 
 .our_vsn_ellipse_1 {
@@ -243,7 +259,7 @@
 .nav_link::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -277,15 +293,8 @@
 /* <--------------------------------------------------------------- Hover Efects -------------------------------------------------------------------->*/
 
 .nav_link:hover::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
-    height: 2px;
-    border-radius: 2px;
-    background: var(--nav_link);
+    bottom: -5px;
 }
 
 .footer_link:hover {
@@ -318,6 +327,7 @@
     border: 1px solid transparent;
     box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.15);
     color: var(--black-color) !important;
+    transition: all 300ms linear;
 }
 
 /* <--------------------------------------------------------------- wdith height changes-------------------------------------------------------------------->*/
@@ -325,6 +335,11 @@
 .hero_heading {
     max-width: 948px;
     min-height: 140px;
+}
+
+.company_text_max_w {
+    max-width: 475px;
+    min-height: 159px;
 }
 
 .blue_line {
@@ -487,9 +502,13 @@
     fill: url(#paint1_linear_40432_2511);
 }
 
-/* <--------------------------------------------------------------- animated menuicon -------------------------------------------------------------------->*/
+/* <--------------------------------------------------------------- z-indexes -------------------------------------------------------------------->*/
 .z-50 {
     z-index: 50;
+}
+
+.-z-1 {
+    z-index: -1;
 }
 
 .z-60 {
@@ -502,13 +521,13 @@
 
 /* <--------------------------------------------------------------- Keyframes -------------------------------------------------------------------->*/
 .svg_effect:hover svg {
-    animation: svg_animation 3s 1;
+    animation: svg_animation 1s 1;
 }
 
 .svg_effect:hover {
-    animation: color_svg 3s 1;
+    animation: color_svg 1s 1;
     background-color: var(--color-white);
-    transition: all 3000ms linear;
+    transition: all 2000ms linear;
 }
 
 .svg_effect_inst:hover svg path {
