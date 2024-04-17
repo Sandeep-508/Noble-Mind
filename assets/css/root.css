@@ -616,7 +616,7 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
     .lg_view {
         position: fixed;
         height: 100%;
@@ -630,10 +630,6 @@ a {
         flex-direction: column;
         z-index: 60;
         transition: all 300ms linear;
-    }
-
-    .position-none {
-        position: unset;
     }
 
     .show {
@@ -677,6 +673,11 @@ a {
     .my_our_serv {
         margin-top: 100px;
         margin-bottom: 100px;
+    }
+
+    .max_w_box_text {
+        max-width: fit-content !important;
+        min-height: 0 !important;
     }
 }
 
@@ -745,10 +746,5 @@ a {
         width: 30px !important;
         height: 30px !important;
         border-radius: 50% !important;
-    }
-
-    .max_w_box_text {
-        max-width: fit-content !important;
-        min-height: 0 !important;
     }
 }
