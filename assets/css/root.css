@@ -717,4 +717,11 @@ a {
         font-size: var(--fs-36);
         line-height: var(--lh-46);
     }
+
+    .scroll_top,
+    .scroll_box {
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 50% !important;
+    }
 }
