@@ -11,7 +11,7 @@ ham.addEventListener("click", () => {
             if (nav_item.classList.contains("lg_view")) {
                 links.forEach(itm => {
                     itm.addEventListener("click", () => {
-                        ham.classList.toggle("position-fixed");
+                        ham.classList.add("position-fixed");
                         ham.style.right = "12px";
                         ham.style.top = "17px";
                     });
@@ -20,6 +20,8 @@ ham.addEventListener("click", () => {
         } else {
             body.style.overflow = "auto";
             ham.classList.remove("position-fixed");
+            ham.style.right = "0";
+            ham.style.top = "0";
         }
     }
 });
