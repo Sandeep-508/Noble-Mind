@@ -602,6 +602,11 @@ a {
         max-width: 536px;
         min-height: 168px;
     }
+
+    .max_w_srvc_sec {
+        max-width: 536px;
+        min-height: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -647,19 +652,24 @@ a {
         padding-bottom: 80px !important;
     }
 
-    .my_our_msn {
-        margin-top: 80px !important;
-        margin-bottom: 80px !important;
+    .py_our_serv {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
     }
 
-    .max_w_srvc_sec {
-        max-width: 536px;
-        min-height: 0;
+    .my_our_msn {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
     }
 
     .fs_lh_hero_box {
         font-size: var(--fs-50);
         line-height: var(--lh-60);
+    }
+
+    .my_our_serv {
+        margin-top: 100px;
+        margin-bottom: 100px;
     }
 }
 
@@ -668,6 +678,11 @@ a {
     .fs_lh_change {
         font-size: var(--fs-30);
         line-height: var(--lh-39);
+    }
+
+    .py_our_serv {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
     }
 
     .fs_lh_hero_box {
@@ -689,10 +704,10 @@ a {
         line-height: var(--lh-49);
     }
 
-    .my_our_msn {
+    /* .my_our_msn {
         margin-top: 40px !important;
         margin-bottom: 40px !important;
-    }
+    } */
 
     .hero_heading {
         max-width: 948px;
@@ -704,10 +719,10 @@ a {
         line-height: var(--lh-23);
     }
 
-    .py_our_msn {
+    /* .py_our_msn {
         padding-top: 40px !important;
         padding-bottom: 40px !important;
-    }
+    } */
 
     .w-sm-100 {
         max-width: 100% !important;

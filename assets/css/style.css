@@ -12,13 +12,18 @@
 }
 
 .mx_12px_cont {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
 }
 
 .my_52px {
     margin-top: 52px;
     margin-bottom: 52px;
+}
+
+.my_our_serv {
+    margin-top: 152px;
+    margin-bottom: 152px;
 }
 
 .mt_20px {
