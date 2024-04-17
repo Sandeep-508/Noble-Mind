@@ -11,9 +11,8 @@
     gap: 32px;
 }
 
-.mx_12px_cont {
-    margin-left: 12px !important;
-    margin-right: 12px !important;
+.pb_7px {
+    padding-bottom: 7px;
 }
 
 .my_52px {

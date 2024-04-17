@@ -609,6 +609,13 @@ a {
     }
 }
 
+@media (max-width: 1024px) {
+    .mx_12px_cont {
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+}
+
 @media (max-width: 768px) {
     .lg_view {
         position: fixed;
@@ -738,5 +745,10 @@ a {
         width: 30px !important;
         height: 30px !important;
         border-radius: 50% !important;
+    }
+
+    .max_w_box_text {
+        max-width: fit-content !important;
+        min-height: 0 !important;
     }
 }
