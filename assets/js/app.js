@@ -1,3 +1,5 @@
+// nav menu
+
 let ham = document.querySelector(".menuicon");
 let nav_item = document.querySelector(".nav_items");
 let links = document.querySelectorAll(".nav_link");

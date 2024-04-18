@@ -593,10 +593,15 @@ a {
 }
 
 @media (max-width: 992px) {
+
+    /* font size changes in media queries */
+
     .fs_lh_heading {
         font-size: var(--fs-59);
         line-height: var(--lh-68);
     }
+
+    /* till here */
 
     .max_w_srvc_sec {
         max-width: 536px;
@@ -617,6 +622,21 @@ a {
 }
 
 @media (max-width: 767.9px) {
+
+    /* font size changes in media queries */
+
+    .fs_lh_heading {
+        font-size: var(--fs-50);
+        line-height: var(--lh-56);
+    }
+
+    .fs_lh_hero_box {
+        font-size: var(--fs-50);
+        line-height: var(--lh-60);
+    }
+
+    /* till here */
+
     .lg_view {
         position: fixed;
         height: 100%;
@@ -645,10 +665,6 @@ a {
         height: 410px !important;
     }
 
-    .fs_lh_heading {
-        font-size: var(--fs-50);
-        line-height: var(--lh-56);
-    }
 
     .py_our_msn {
         padding-top: 80px !important;
@@ -665,10 +681,6 @@ a {
         margin-bottom: 50px !important;
     }
 
-    .fs_lh_hero_box {
-        font-size: var(--fs-50);
-        line-height: var(--lh-60);
-    }
 
     .my_our_serv {
         margin-top: 100px;
@@ -683,20 +695,42 @@ a {
 
 
 @media (max-width: 575.9px) {
+
+    /* font size changes in media queries */
+
     .fs_lh_change {
         font-size: var(--fs-30);
         line-height: var(--lh-39);
-    }
-
-    .py_our_serv {
-        padding-top: 50px !important;
-        padding-bottom: 50px !important;
     }
 
     .fs_lh_hero_box {
         font-size: var(--fs-30);
         line-height: var(--lh-39);
     }
+
+    .fs_lh_heading {
+        font-size: var(--fs-40);
+        line-height: var(--lh-49);
+    }
+
+    .fs_sub_text {
+        font-size: var(--fs-14);
+        line-height: var(--lh-23);
+    }
+
+    .fs_lh_some_heading {
+
+        font-size: var(--fs-36);
+        line-height: var(--lh-46);
+    }
+
+    /* till here */
+
+    .py_our_serv {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
 
     .h_media {
         height: 250px !important;
@@ -707,10 +741,6 @@ a {
         padding-bottom: 10px !important;
     }
 
-    .fs_lh_heading {
-        font-size: var(--fs-40);
-        line-height: var(--lh-49);
-    }
 
     /* .my_our_msn {
         margin-top: 40px !important;
@@ -722,10 +752,6 @@ a {
         min-height: auto !important;
     }
 
-    .fs_sub_text {
-        font-size: var(--fs-14);
-        line-height: var(--lh-23);
-    }
 
     /* .py_our_msn {
         padding-top: 40px !important;
@@ -736,15 +762,16 @@ a {
         max-width: 100% !important;
     }
 
-    .fs_lh_some_heading {
-        font-size: var(--fs-36);
-        line-height: var(--lh-46);
-    }
-
     .scroll_top,
     .scroll_box {
         width: 30px !important;
         height: 30px !important;
         border-radius: 50% !important;
     }
+
+    .company_text_max_w {
+        max-width: 475px !important;
+        min-height: 0 !important;
+    }
+
 }
