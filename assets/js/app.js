@@ -65,3 +65,11 @@ let preloader = document.querySelector(".preloader");
 setTimeout(() => {
     preloader.classList.add("-top-105");
 }, 3000);
+
+
+// AOS Animation
+
+AOS.init({
+    duration: 2000,
+    once: true,
+});
